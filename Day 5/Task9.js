@@ -5,4 +5,4 @@ function repeatFunction(fn, times) {
 
 const sayHello = () => console.log("Hello");
 
-repeatFunction(sayHello, 10);
+repeatFunction(sayHello, 3);
