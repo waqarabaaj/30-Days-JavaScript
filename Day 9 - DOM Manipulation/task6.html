@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 - DOM</title>
+</head>
+
+<body>
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="removeLastChild()">Remove Last Element</button>
+
+    <script>
+        function removeLastChild() {
+            const itemList = document.getElementById('itemList')
+
+            if (itemList.lastChild) {
+                itemList.removeChild(itemList.lastChild)
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - DOM Munipluation</title>
+</head>
+
+<body>
+    <button onclick="addNewDiv()">Add new div</button>
+
+
+    <script>
+        function addNewDiv() {
+            const newDiv = document.createElement('div');
+
+            newDiv.textContent = ' This is new Div element';
+
+            document.body.appendChild(newDiv)
+        }
+    </script>
+</body>
+
+</html>
