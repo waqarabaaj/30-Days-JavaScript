@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+
+<body>
+    <input type="text" id="myInput" placeholder="Type something...">
+    <p id="output"></p>
+
+    <script>
+        // JavaScript code to handle events
+        const inputField = document.getElementById('myInput');
+        const outputParagraph = document.getElementById('output');
+
+        inputField.addEventListener('keyup', function () {
+            // Display the current value of the input field in the paragraph
+            outputParagraph.textContent = `Current value: ${this.value}`;
+        });
+    </script>
+</body>
+
+</html>

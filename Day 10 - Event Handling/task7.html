@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript code to handle events
+        const form = document.getElementById('myForm');
+
+        form.addEventListener('submit', function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Create an object to hold the form data
+            const formData = {
+                name: form.elements['name'].value,
+                email: form.elements['email'].value
+            };
+
+            // Log the form data to the console
+            console.log('Form Data:', formData);
+        });
+    </script>
+</body>
+
+</html>

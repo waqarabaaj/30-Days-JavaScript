@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <script>
+        // JavaScript code to handle events
+        const list = document.getElementById('myList');
+
+        list.addEventListener('click', function (event) {
+            // Check if the clicked element is an li
+            if (event.target && event.target.nodeName === 'LI') {
+                // Log the text content of the clicked list item
+                console.log(`Clicked item: ${event.target.textContent}`);
+            }
+        });
+    </script>
+</body>
+
+</html>
